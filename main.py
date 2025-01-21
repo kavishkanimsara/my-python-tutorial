@@ -1,4 +1,4 @@
-
+####################################################################################
 ## list in python
 # list is a collection of items in a particular order
 # list is defined by square brackets []
@@ -24,3 +24,49 @@ my_list.remove(100)  # remove 100 from the list
 my_list.pop()  # remove the last element from the list
 my_list.pop(1)  # remove element at index 1
 my_list.clear()  # remove all elements from the list
+
+my_list.index(2)  # return the index of 2
+my_list.count(2)  # return the number of 2 in the list
+my_list.sort()  # sort the list
+my_list.reverse()  # reverse the list
+my_list.copy()  # return a copy of the list
+
+len(my_list)  # return the length of the list
+max(my_list)  # return the maximum value of the list
+min(my_list)  # return the minimum value of the list
+sum(my_list)  # return the sum of the list
+
+
+
+#####################################################################################
+
+# Tuple
+# tuple is similar to list but it is immutable
+# tuple is defined by parentheses ()
+
+my_tuple = (1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+
+my_tuple.insert(1, 100)  # this will give an error because tuple is immutable
+
+###################################################################################
+# Set
+# set is a collection of unique elements
+# set is defined by curly braces {}
+# set can contain any type of data
+# set is unordered, means the items in the set do not have a specific order
+# set is mutable
+
+my_set = {1 ,  3}
+print(my_set)
+my_set = {1, 1,1}
+
+
+## set methods
+a = {1, 2, 3, 4, 5}
+b = {4, 5, 6, 7, 8}
+
+print(a.union(b))  # return a set containing all the elements of both a and b 
+print(a.intersection(b))  # return a set containing the common elements of both a and b
+print(a.difference(b))  # return a set containing the elements of a that are not in b
+
+
